@@ -1,3 +1,9 @@
+/*Ranking the most valuable Car manufacturers*/
+SELECT DISTINCT Name, rank
+FROM [Top 48 Automakers]
+ORDER BY rank
+
+
 /*Comparison of the average adjusted closing price across 10 years*/
 WITH cte1 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2012'
 FROM [Top 48 Automakers]
