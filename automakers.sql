@@ -1,20 +1,19 @@
 --Using inner join to merge the two tables with specific columns.
-/*SELECT car_stock.Date,car_names.Name, car_names.Symbol,car_names.country,car_names.Rank,car_names.price_USD,
+SELECT car_stock.Date,car_names.Name, car_names.Symbol,car_names.country,car_names.Rank,car_names.price_USD,
 	   car_stock.Adj_Close,car_stock.Close_,car_stock.Open_, car_stock.High,car_stock.Low,car_stock.Volume
 FROM Largest_automakers_by_market_capitalization AS car_names
 
 INNER JOIN [automakers_stocks_2010-2022] AS car_stock
-ON car_names.Symbol = car_stock.Symbol*/
+ON car_names.Symbol = car_stock.Symbol
 
 
-/*Ranking the most valuable Car manufacturers*/
-
-/*SELECT DISTINCT(Name),rank
+--Ranking the most valuable Car manufacturers--
+SELECT DISTINCT(Name),rank
 FROM [Top 48 Automakers]
-ORDER BY rank*/
+ORDER BY rank
 
-/*Comparison of the average adjusted closing price across 10 years*/
-/*WITH cte1 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2012'
+--Comparison of the average adjusted closing price across 10 years--
+WITH cte1 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2012'
 FROM [Top 48 Automakers]
 WHERE Date BETWEEN '2012-01-01' AND '2012-12-31'
 GROUP BY Name) ,
@@ -79,7 +78,7 @@ ON cte2.Auto_name = cte7.Auto_name
 LEFT JOIN cte8
 ON cte2.Auto_name = cte8.Auto_name
 LEFT JOIN cte9
-ON cte2.Auto_name = cte9.Auto_name*/
+ON cte2.Auto_name = cte9.Auto_name
 
 
 
