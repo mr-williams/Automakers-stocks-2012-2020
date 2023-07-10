@@ -4,4 +4,4 @@ The Datasets were gotten from kaggle which:
 - The other dataset gives a more detailed breakdown of variables in the stock market from 2012-2020.
 Here's the kaggle link to the dataset. [Here](https://www.kaggle.com/datasets/prasertk/top-48-automakers-daily-stock-prices-20102022).
 
-***N.B: Not all manufacturer data were present in the detailed breakdown of the stocks. Some high ranking manufacturers are missing
+*** N.B: Not all manufacturer data were present in the detailed breakdown of the stocks. Some high ranking manufacturers are missing
