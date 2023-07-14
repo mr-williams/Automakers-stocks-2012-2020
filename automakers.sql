@@ -1,3 +1,29 @@
+--This was used to insert some of the missing manufacturers(Mercedes-Benz,Porsche & TATA motors)--
+INSERT INTO [automakers_stocks_2010-2022](Date, [Open], High, Low, [Close], Adj_Close, Volume)
+SELECT Date, [Open], High, Low, [Close], Adj_Close, Volume
+FROM [MBG.DE]
+
+INSERT INTO [automakers_stocks_2010-2022](Date, [Open], High, Low, [Close], Adj_Close, Volume)
+SELECT Date, [Open], High, Low, [Close], Adj_Close, Volume
+FROM [P911.DE]
+
+INSERT INTO [automakers_stocks_2010-2022](Date, [Open], High, Low, [Close], Adj_Close, Volume)
+SELECT Date, [Open], High, Low, [Close], Adj_Close, Volume
+FROM [TATAMOTORS.NS]
+	
+--This was used to fill up the NULL values where the Symbol was missing--
+UPDATE [automakers_stocks_2010-2022]
+SET Symbol = 'MBG.DE' 
+WHERE Symbol is NULL
+
+UPDATE [automakers_stocks_2010-2022]
+SET Symbol = 'P911.DE' 
+WHERE Symbol is NULL
+
+UPDATE [automakers_stocks_2010-2022]
+SET Symbol = 'TATAMOTORS.NS' 
+WHERE Symbol is NULL
+
 --Using inner join to merge the two tables with specific columns.
 SELECT car_stock.Date,car_names.Name, car_names.Symbol,car_names.country,car_names.Rank,car_names.price_USD,
 	   car_stock.Adj_Close,car_stock.Close_,car_stock.Open_, car_stock.High,car_stock.Low,car_stock.Volume
@@ -6,6 +32,7 @@ FROM Largest_automakers_by_market_capitalization AS car_names
 INNER JOIN [automakers_stocks_2010-2022] AS car_stock
 ON car_names.Symbol = car_stock.Symbol
 
+--N.B: The results were saved as [Top 50 Automakers] and used for the Analysis Process--
 
 --Ranking the most valuable Car manufacturers--
 SELECT DISTINCT(Name),rank
