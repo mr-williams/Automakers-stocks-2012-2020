@@ -107,7 +107,7 @@ ON cte2.Auto_name = cte8.Auto_name
 LEFT JOIN cte9
 ON cte2.Auto_name = cte9.Auto_name
 
-
+--N.B: Some Manufacturers are missing like Porsche in paarticular as their stock market for their supercar division started as late as October 2022--
 
 
 
