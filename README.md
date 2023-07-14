@@ -5,4 +5,5 @@ The Datasets were gotten from kaggle which:
 
 Here's the kaggle link to the dataset. [Here](https://www.kaggle.com/datasets/prasertk/top-48-automakers-daily-stock-prices-20102022).
 
-#### N.B: Not all manufacturer data were present in the detailed breakdown of the stocks. Some high ranking manufacturers are missing
+#### N.B: Not all manufacturer data were present in the detailed breakdown of the stocks. Some high ranking manufacturers are missing like Porsche in paarticular as their stock market for their supercar division started as late as October 2022
+
