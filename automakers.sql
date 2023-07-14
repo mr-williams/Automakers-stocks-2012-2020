@@ -9,52 +9,52 @@ ON car_names.Symbol = car_stock.Symbol
 
 --Ranking the most valuable Car manufacturers--
 SELECT DISTINCT(Name),rank
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 ORDER BY rank
 
 --Comparison of the average adjusted closing price across 10 years--
 WITH cte1 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2012'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2012-01-01' AND '2012-12-31'
 GROUP BY Name) ,
 	 
 	 cte2 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2013'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2013-01-01' AND '2013-12-31'
 GROUP BY Name) ,
 
 	cte3 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2014'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2014-01-01' AND '2014-12-31'
 GROUP BY Name) ,
 
 	cte4 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2015'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2015-01-01' AND '2015-12-31'
 GROUP BY Name) ,
 
 	cte5 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2016'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2016-01-01' AND '2016-12-31'
 GROUP BY Name) ,
 
 	cte6 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2017'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2017-01-01' AND '2017-12-31'
 GROUP BY Name) ,
 
 	cte7 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2018'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2018-01-01' AND '2018-12-31'
 GROUP BY Name) ,
 
 	cte8 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2019'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2019-01-01' AND '2019-12-31'
 GROUP BY Name) ,
 
 	cte9 AS (SELECT DISTINCT[Name] AS Auto_name,AVG(adjusted_close_price) AS '2020'
-FROM [Top 48 Automakers]
+FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2020-01-01' AND '2020-12-31'
 GROUP BY Name) 
 
