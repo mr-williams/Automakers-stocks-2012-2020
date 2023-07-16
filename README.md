@@ -5,7 +5,7 @@ The Datasets were gotten from kaggle which:
 
 Here's the kaggle link to the dataset. [Here](https://www.kaggle.com/datasets/prasertk/top-48-automakers-daily-stock-prices-20102022).
 
-#### N.B: Not all manufacturer data were present in the detailed breakdown of the stocks. Some high ranking manufacturers are missing like Porsche in paarticular as their stock market for their supercar division started as late as October 2022
+#### N.B: Not all manufacturer data were present in the detailed breakdown of the stocks. Some high ranking manufacturers are missing like Porsche in paarticular as their stock market for their supercar division started as late as October 2022. This had to be gotten directly from the source [Yahoo_Finance](https://finance.yahoo.com/quote/P911.DE/history?period1=1325376000&period2=1640908800&interval=1d&filter=history&frequency=1d&includeAdjustedClose=true)
 
 #### Column terms:
 - Volume:  the total number of shares traded in a specified time frame. This would include every share that is bought and sold during the time period in review.
