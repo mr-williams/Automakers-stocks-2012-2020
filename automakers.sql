@@ -98,8 +98,6 @@ FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2021-01-01' AND '2021-12-31'
 GROUP BY Name) 
 
-
-
 SELECT cte1.Auto_name, cte1.[2012], cte2.[2013], cte3.[2014], 
 	cte4.[2015], cte5.[2016], cte6.[2017], cte7.[2018], 
 	cte8.[2019], cte9.[2020], cte10.[2021]
@@ -181,11 +179,9 @@ vol10 AS (SELECT DISTINCT[Name],(AVG(CONVERT(bigint,Volume))) AS '2021'
 FROM [Top 50 Automakers]
 WHERE Date BETWEEN '2021-01-01' AND '2021-12-31'
 GROUP BY Name)
-
-
 	 
-SELECT vol1.Name, vol1.[2012], vol2.[2013], vol3.[2014], vol4.[2015], vol5.[2016], vol6.[2017],
-		vol7.[2018], vol8.[2019],vol9.[2020], vol10.[2021]
+SELECT vol1.Name, vol1.[2012], vol2.[2013], vol3.[2014], vol4.[2015], 
+	vol5.[2016], vol6.[2017],vol7.[2018], vol8.[2019],vol9.[2020], vol10.[2021]
 FROM vol1
 LEFT JOIN vol2
 ON vol1.Name = vol2.Name
