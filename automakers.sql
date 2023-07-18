@@ -41,7 +41,7 @@ FROM [Top 50 Automakers]
 ORDER BY rank
 
 
--- --
+--Recent prices that a share of stock is trading for on the market.--
 SELECT DISTINCT Name, Price_USD
 FROM [Top 50 Automakers]
 GROUP BY Name, Price_USD
