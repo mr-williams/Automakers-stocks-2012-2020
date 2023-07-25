@@ -17,3 +17,5 @@ Here's the kaggle link to the dataset. [Here](https://www.kaggle.com/datasets/pr
 - Low: This is the trading day's intraday low price.
 - Symbol: This is a unique series of letters assigned to a security for trading purposes.
 
+The visualization for this was done through power Bi which would be added in the files as a pdf and .pbix format to give an overall summary of what was found.
+
