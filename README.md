@@ -19,3 +19,5 @@ Here's the kaggle link to the dataset. [Here](https://www.kaggle.com/datasets/pr
 
 The visualization for this was done through power Bi which would be added in the files as a pdf and .pbix format to give an overall summary of what was found.
 
+The downloaded files from kaggle have been uploaded to have a glimpse of the data that was worked with.
+
